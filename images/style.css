@@ -329,5 +329,21 @@ tbody tr td{
     #interface .navigation .search input {
         width: 150px;
     }
+    .i-name {
 
+        padding: 30px 15px 0px 15px;
+     
+    }
+    .values {
+        padding: 15px 15px 0px 15px;
+    }
+
+    .values .fastbox {
+        width: 100%;
+        margin: 8px 0px;
+
+    }
+    .board {
+margin: 30px 15px 30px 15px;
+    }
 }
