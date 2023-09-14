@@ -1,29 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <section id="menu">
-        <div class="logo">
-            <!-- <img src="./hey.png" alt=""> -->
-            <h1>X-DASHBOARD</h1>
-        </div>
-        <div class="items">
-            <li><i class="fa-solid fa-chart-pie"></i><a href="#">Dashboard</a></li>
-            <li><i class="fa-brands fa-uikit"></i><a href="#">Element</a></li>
-            <li><i class="fa-solid fa-table-list"></i><a href="#">Tables</a></li>
-            <li><i class="fa-solid fa-list-ul"></i><a href="#">Form</a></li>
-            <li><i class="fa-solid fa-id-card-clip"></i><a href="#">Cards</a></li>
-            <li><i class="fa-solid fa-chart-pie"></i><a href="#">Modal</a></li>
-            <li><i class="fa-solid fa-chart-pie"></i><a href="#">Blank</a></li>
-        </div>
+      <div class="logo">
+        <!-- <img src="./hey.png" alt=""> -->
+        <h1>X-DASHBOARD</h1>
+      </div>
+      <div class="items">
+        <li><i class="fa-solid fa-chart-pie"></i><a href="#">Dashboard</a></li>
+        <li><i class="fa-brands fa-uikit"></i><a href="#">Element</a></li>
+        <li><i class="fa-solid fa-table-list"></i><a href="#">Tables</a></li>
+        <li><i class="fa-solid fa-list-ul"></i><a href="#">Form</a></li>
+        <li><i class="fa-solid fa-id-card-clip"></i><a href="#">Cards</a></li>
+        <li><i class="fa-solid fa-chart-pie"></i><a href="#">Modal</a></li>
+        <li><i class="fa-solid fa-chart-pie"></i><a href="#">Blank</a></li>
+      </div>
     </section>
-    
-</body>
+
+    <section id="interface">
+      <div class="navigation">
+        <div class="n1">
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="search" />
+          </div>
+        </div>
+
+        <div class="profile">
+          <i class="fa-solid fa-bell"></i>
+          <img src="./profile.jpg" alt="" />
+        </div>
+      </div>
+
+      <h3 class="i-name">Dashboard</h3>
+
+      <div class="values">
+        <div class="fastbox">
+          <i class="fa-solid fa-user"></i>
+          <div>
+            <h3>19,000</h3>
+            <span>New User's</span>
+          </div>
+        </div>
+        <div class="fastbox">
+          <i class="fa-solid fa-user"></i>
+          <div>
+            <h3>19,000</h3>
+            <span>New User's</span>
+          </div>
+        </div>
+        <div class="fastbox">
+          <i class="fa-solid fa-user"></i>
+          <div>
+            <h3>19,000</h3>
+            <span>New User's</span>
+          </div>
+        </div>
+        <div class="fastbox">
+          <i class="fa-solid fa-user"></i>
+          <div>
+            <h3>19,000</h3>
+            <span>New User's</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="board">
+        <table width="100%">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Title</td>
+              <td>Role</td>
+              <td>Status</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="people">
+                <img src="./profile.jpg" alt=""/>
+                <div class="people-de">
+                  <h5>Joshua iyamu</h5>
+                  <p>joshua@example.com</p>
+                </div>
+              </td>
+
+              <td class="people-des">
+                <h5>Software Egineer</h5>
+                <p>Web dev</p>
+              </td>
+
+              <td class="active">
+                <p>active</p>
+                <td class="role">
+                    <p>Owner</p>
+                </td>
+                <td class="edit"><a href="#">Edit</a></td>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </body>
 </html>
