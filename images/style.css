@@ -16,7 +16,10 @@ body {
 #menu {
   background-color: #111827;
   width: 300px;
-  height: 100vh;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
 }
 
 #menu .logo img {
@@ -73,6 +76,8 @@ body {
 
 #interface {
   width: calc(100% - 300px);
+  margin-left: 300px;
+  position: relative;
 }
 
 #interface .navigation {
@@ -82,6 +87,8 @@ body {
   padding: 15px 30px;
   background: #fff;
   border-bottom: 3px solid #111827;
+  position: fixed;
+  width: calc(100% - 300px);
 }
 
 #interface .navigation .search {
@@ -119,11 +126,23 @@ body {
   object-fit: cover;
   border-radius: 50px;
 }
+.n1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#menu-btn{
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+    display: none;
+}
 .i-name {
   color: grey;
   padding: 30px 30px 0px 30px;
   font-size: 24px;
   font-weight: 700;
+  margin-top: 70px;
 }
 
 .values {
@@ -228,4 +247,87 @@ padding:15px;
 }
 tbody tr td{
     padding: 10px 15px;
+}
+
+.active p{
+    background-color: green;
+    display: inline-block;
+    padding: 2px 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.edit a{
+    text-decoration: none;
+    background-color: crimson;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+/* end of coding the entire dashboard now starting the responsiveness */
+
+@media (max-width:769px){
+    #menu{
+        width: 270px;
+        position: fixed;
+        left: -270px;
+        transition: 0.5s ease;
+
+    }
+    #menu.active{
+        left: 0px;
+    }
+    #menu-btn{
+        display: initial;
+    }
+    #interface {
+        width:100%;
+     margin-left:0px;
+        position: relative;
+        transition: 0.5s ease;
+    }
+    #menu.active~ #interface{
+        width: calc(100%-270px);
+        margin-left: 270px;
+    }
+
+    #interface .navigation {
+        width:100%
+    }
+
+    .values {
+        padding: 30px 30px 0px 30px;
+         justify-content: flex-start;
+
+    }
+    .values .fastbox {
+        padding: 16px 20px;
+        margin: 10px 20px 10px 0;
+      
+    }
+    .board {
+        width: 92%;
+        padding: 0;
+        overflow-x: auto;
+    }
+    .table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+}
+
+
+
+/* media query for smaller screen */
+@media (max-width:477px) {
+    #interface .navigation {
+        padding: 15px;
+
+    }
+    #interface .navigation .search input {
+        width: 150px;
+    }
+
 }
